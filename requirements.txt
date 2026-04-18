@@ -1,0 +1,49 @@
+# =============================================================================
+# Requirements for local / cloud GPU setups (NOT Colab)
+# =============================================================================
+# For Google Colab, use the install cell in the notebook directly — it handles
+# Colab's pre-installed packages with --no-deps flags that can't be expressed
+# in a plain requirements.txt.
+#
+# Requires:
+#   - NVIDIA GPU (Ampere or newer recommended for bf16; fp32 fallback on T4/V100)
+#   - CUDA 12.1+ drivers
+#   - Python 3.10 or 3.11
+#   - PyTorch already installed (install separately to match your CUDA version)
+#
+# Install PyTorch first, for example:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# Then:
+#   pip install -r requirements.txt
+# =============================================================================
+
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+
+# --- Training stack ---------------------------------------------------------
+unsloth
+unsloth_zoo
+transformers==4.56.2
+trl==0.22.2
+sentence-transformers>=5.0,<5.4
+peft
+accelerate
+bitsandbytes
+xformers
+
+# --- Data & HF ecosystem ----------------------------------------------------
+datasets==4.3.0
+huggingface_hub>=0.34.0
+hf_transfer
+sentencepiece
+protobuf
+
+# --- Runtime utilities ------------------------------------------------------
+triton
+typing_extensions>=4.12
+
+# --- GGUF inference (CUDA-accelerated wheel via extra-index-url above) ------
+llama-cpp-python
+
+# --- Visualization (for the results chart) ----------------------------------
+matplotlib
+seaborn
