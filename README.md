@@ -1,8 +1,9 @@
 # Fine-tuning EmbeddingGemma for Electrical & Electronics Engineering Information Retrieval
 
-<p align="center"><img src="poster.png" width="340"/></p>
 
 A production-ready, domain-specialized embedding model for electrical and electronics engineering. Fine-tuned from [unsloth/embeddinggemma-300m](https://huggingface.co/unsloth/embeddinggemma-300m) — Unsloth's optimized mirror of Google's [EmbeddingGemma-300M](https://huggingface.co/google/embeddinggemma-300m) — using a LoRA adapter trained with [Unsloth](https://github.com/unslothai/unsloth)'s `FastSentenceTransformer` on the [ElectricalElectronicsIR](https://huggingface.co/datasets/disham993/ElectricalElectronicsIR) dataset, then exported to GGUF for efficient deployment via `llama.cpp`.
+
+<p align="center"><img src="poster.png" width="340"/></p>
 
 **If you are building semantic search, RAG, or a knowledge base over electrical engineering content, this model gives you near-perfect retrieval at the size and speed of a 300M parameter encoder.**
 
