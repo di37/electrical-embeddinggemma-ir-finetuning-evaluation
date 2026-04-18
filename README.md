@@ -207,3 +207,34 @@ login(token=os.environ["HF_TOKEN"])
 - **Code and notebook** in this repository: [MIT](./LICENSE)
 - **EmbeddingGemma model weights**: [Gemma Terms of Use](https://ai.google.dev/gemma/terms)
 - **ElectricalElectronicsIR dataset**: MIT (see dataset card)
+
+---
+
+## Citation
+
+If you use this work, please cite the EmbeddingGemma base model and this fine-tuning project:
+
+### EmbeddingGemma base model
+
+```bibtex
+@misc{vera2025embeddinggemma,
+  title        = {EmbeddingGemma: Powerful and Lightweight Text Representations},
+  author       = {Henrique Schechter Vera and Sahil Dua and Biao Zhang and others},
+  year         = {2025},
+  eprint       = {2509.20354},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  url          = {https://arxiv.org/abs/2509.20354},
+}
+```
+
+### Fine-tuned model
+
+```bibtex
+@misc{gemma-300m-electrical-electronics-ir,
+  author       = {disham993},
+  title        = {Electrical \& Electronics Engineering Embedding Models},
+  year         = {2026},
+  howpublished = {\url{https://huggingface.co/collections/disham993/electrical-and-electronics-engineering-embedding-models}},
+}
+```
