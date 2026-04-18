@@ -19,14 +19,14 @@ Evaluated on the held-out test split (2,000 queries) of ElectricalElectronicsIR 
 |---|---|---|---|---|---|
 | `google/embeddinggemma-300m` | Baseline | 0.5753 | 0.6221 | 0.5682 | 0.7925 |
 | `unsloth/embeddinggemma-300m` | Baseline | 0.5753 | 0.6221 | 0.5682 | 0.7925 |
-| **`embeddinggemma-300m-electrical-electronics-ir_lora`** ⭐ | LoRA adapter | **0.9795** | **0.9847** | **0.9795** | **1.0000** |
-| **`embeddinggemma-300m-electrical-electronics-ir_fp16`** ⭐ | Merged fp16 | **0.9797** | **0.9849** | **0.9797** | **1.0000** |
-| **`embeddinggemma-300m-electrical-electronics-ir_f16`** ⭐ | GGUF f16 | **0.9849** | **0.9887** | **0.9849** | **0.9995** |
-| **`embeddinggemma-300m-electrical-electronics-ir_q8_0`** ⭐ | GGUF q8_0 | **0.9844** | **0.9883** | **0.9844** | **0.9995** |
-| **`embeddinggemma-300m-electrical-electronics-ir_q4_k_m`** ⭐ | GGUF q4_k_m | **0.9841** | **0.9879** | **0.9840** | **0.9990** |
-| **`embeddinggemma-300m-electrical-electronics-ir_q5_k_m`** ⭐ | GGUF q5_k_m | **0.9824** | **0.9866** | **0.9823** | **0.9990** |
+| **`gemma-300m-electrical-electronics-ir_lora`** ⭐ | LoRA adapter | **0.9795** | **0.9847** | **0.9795** | **1.0000** |
+| **`gemma-300m-electrical-electronics-ir_fp16`** ⭐ | Merged fp16 | **0.9797** | **0.9849** | **0.9797** | **1.0000** |
+| **`gemma-300m-electrical-electronics-ir_f16`** ⭐ | GGUF f16 | **0.9849** | **0.9887** | **0.9849** | **0.9995** |
+| **`gemma-300m-electrical-electronics-ir_q8_0`** ⭐ | GGUF q8_0 | **0.9844** | **0.9883** | **0.9844** | **0.9995** |
+| **`gemma-300m-electrical-electronics-ir_q4_k_m`** ⭐ | GGUF q4_k_m | **0.9841** | **0.9879** | **0.9840** | **0.9990** |
+| **`gemma-300m-electrical-electronics-ir_q5_k_m`** ⭐ | GGUF q5_k_m | **0.9824** | **0.9866** | **0.9823** | **0.9990** |
 
-![Retrieval performance comparison across all model variants](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_fp16/resolve/main/eeir-models-retrieval-comparison.png)
+![Retrieval performance comparison across all model variants](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_fp16/resolve/main/eeir-models-retrieval-comparison.png)
 
 ---
 
@@ -117,12 +117,12 @@ All model variants are published on the Hugging Face Hub:
 
 | Artifact | Format | Use Case |
 |---|---|---|
-| [embeddinggemma-300m-electrical-electronics-ir_lora](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_lora) | LoRA adapter | Stack on base EmbeddingGemma-300M |
-| [embeddinggemma-300m-electrical-electronics-ir_fp16](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_fp16) | Merged fp16 | Sentence Transformers, vLLM, TEI |
-| [embeddinggemma-300m-electrical-electronics-ir_f16](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_f16) | GGUF f16 | Full-precision `llama.cpp` inference |
-| [embeddinggemma-300m-electrical-electronics-ir_q8_0](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_q8_0) | GGUF q8_0 | 8-bit quantization |
-| [embeddinggemma-300m-electrical-electronics-ir_q4_k_m](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_q4_k_m) | **GGUF q4_k_m** | **Recommended for production deployment** |
-| [embeddinggemma-300m-electrical-electronics-ir_q5_k_m](https://huggingface.co/disham993/embeddinggemma-300m-electrical-electronics-ir_q5_k_m) | GGUF q5_k_m | 5-bit quantization |
+| [gemma-300m-electrical-electronics-ir_lora](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_lora) | LoRA adapter | Stack on base EmbeddingGemma-300M |
+| [gemma-300m-electrical-electronics-ir_fp16](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_fp16) | Merged fp16 | Sentence Transformers, vLLM, TEI |
+| [gemma-300m-electrical-electronics-ir_f16](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_f16) | GGUF f16 | Full-precision `llama.cpp` inference |
+| [gemma-300m-electrical-electronics-ir_q8_0](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_q8_0) | GGUF q8_0 | 8-bit quantization |
+| [gemma-300m-electrical-electronics-ir_q4_k_m](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_q4_k_m) | **GGUF q4_k_m** | **Recommended for production deployment** |
+| [gemma-300m-electrical-electronics-ir_q5_k_m](https://huggingface.co/disham993/gemma-300m-electrical-electronics-ir_q5_k_m) | GGUF q5_k_m | 5-bit quantization |
 
 For loading, inference, and integration examples, see the individual model cards on the Hugging Face Hub linked above.
 
@@ -160,8 +160,8 @@ For loading, inference, and integration examples, see the individual model cards
 ## Reproducing the Results
 
 ```bash
-git clone https://github.com/di37/embeddinggemma-300m-electrical-electronics-ir-finetuning-evaluation.git
-cd embeddinggemma-300m-electrical-electronics-ir-finetuning-evaluation
+git clone https://github.com/di37/gemma-300m-electrical-electronics-ir-finetuning-evaluation.git
+cd gemma-300m-electrical-electronics-ir-finetuning-evaluation
 ```
 
 ### Local / cloud GPU
